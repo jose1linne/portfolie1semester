@@ -2,14 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tema5</title>
     <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,12 @@
 
 <body>
     <header>
-        <div class="logo_container">
-            <a class="logo" href="index.html">P</a>
+        <div>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
+            </div>
         </div>
-
 
         <div class="menu_container">
             <nav>
@@ -69,10 +72,12 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Formål</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+                <h2 class="h2card">Formål</h2>
+                <p>Temaet gav en grundlæggende indføring i indholdsproduktion fra præ- til postproduktion.
+                    Smartphone-kameraer blev brugt,
+                    og der blev arbejdet med animeret vektorgrafik (LottieFiles). Tidligere færdigheder blev anvendt til
+                    at redesigne en
+                    virksomheds hjemmeside.</p>
             </div>
 
             <div class="card2">
@@ -86,10 +91,9 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Proces</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+                <h2 class="h2card">Proces</h2>
+                <p>Under tema 5 arbejde vi sammen i grupper, hvor der var fokus på sammenarbejde. Herunder at kunne
+                    tilpasse site til en bestemt målgruppe og brugevenligt.</p>
             </div>
 
             <div class="card3">
@@ -103,14 +107,19 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Læring</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+
+                <div>
+                    <h2 class="h2card">Læring</h2>
+                    <p>Vi lærte om, hvordan man bedst muligt arbejder sammen som, hvis man faktisk sad med en
+                        virksomhed. Vi lærte også om hvordan man tester ens website så man sikre den bedste oplevelse
+                        for brugeren. </p>
+                </div>
+
+                <div><a class="site" href="https://katrineriis.github.io/virksomheds_main/">Tema5 site</a></div>
             </div>
         </section>
 
-        <div class="linkSite"><a href="https://katrineriis.github.io/virksomheds_main/">Tema5 site</a></div>
+
 
 
     </main>
@@ -119,7 +128,8 @@
         <h1>JOSEFINE</h1>
     </footer>
 
-    <script src="generel.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>

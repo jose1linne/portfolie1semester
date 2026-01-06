@@ -2,14 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolie Josefine</title>
     <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="hover.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +28,17 @@
 
 <body>
     <header>
-        <div class="logo_container">
-            <a class="logo" href="index.html">P</a>
+        <div>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
+            </div>
         </div>
-
 
         <div class="menu_container">
             <nav>
                 <ul class="menu" id="menu">
+
                     <li><a href="tema2.html">tema2</a></li>
                     <li><a href="tema3.html">tema3</a></li>
                     <li><a href="tema4.html">tema4</a></li>
@@ -174,11 +178,12 @@
 
     <footer>
         <div>
-            <h1 class="josefine">JOSEFINE</h1>
+            <h1>JOSEFINE</h1>
         </div>
     </footer>
 
-    <script src="generel.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>

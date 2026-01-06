@@ -1,6 +1,6 @@
 .overskrift {
-  padding-bottom: 190px;
-  padding-top: 150px;
+  padding-top: 170px;
+  padding-bottom: 300px;
 }
 
 /**********kvittering*********/
@@ -14,7 +14,6 @@
   margin: auto;
   padding: 15px;
   margin-bottom: 200px;
-
   flex-direction: column; /*gør elemterne i boksen lodrette og ikke vandrette*/
 }
 
@@ -109,13 +108,6 @@
   width: 350px;
 }
 
-/*******andet********/
-
-.josefine {
-  text-align: center;
-  font-size: clamp(100px, 20vw, 400px);
-}
-
 /*********tema*******/
 
 .grid_1 {
@@ -170,18 +162,16 @@
 
 .linkSite {
   text-align: center;
-  /* color: #9b0505;
-  font-style: none; */
-  /* width: 100%; */
+  margin-bottom: 200px;
 }
 
 .site {
   color: #9b0505;
-  padding: 10px;
+  /* padding: 10px; */
 
-  background-color: white;
+  /* background-color: white; */
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
 @media screen and (min-width: 800px) {
@@ -217,20 +207,15 @@
   margin: 100px auto;
 }
 
-.overskriftKunde {
-  margin: 20px;
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-
 .h1Kunde {
-  font-size: 100px;
-  text-align: start;
-}
+  /* font-size: 100px;
+  text-align: start; */
 
-.h1semester {
-  font-size: 70px;
-  text-align: start;
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 56px;
+  text-align: center; /**får teksten i midten**/
 }
 
 .grid_1_1 {
@@ -256,7 +241,7 @@
 
 .KundeOverskrift {
   margin-top: 190px;
-  margin-bottom: 200px;
+  margin-bottom: 350px;
 }
 
 .liste {
@@ -264,27 +249,25 @@
   line-height: 70px;
   font-size: 25px;
 
-  text-transform: uppercase;
-
   padding-left: 40px;
 }
 
 .cirkel {
   position: relative;
   transform: translateY(-133px);
-
   width: 200px;
 }
 
 .hand {
   display: inline;
-  font-family: "Just Another Hand", cursive;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .spg {
   font-family: "Roboto Mono", monospace;
-  text-transform: uppercase;
-  font-size: 25px;
+  font-size: 15px;
   margin-top: 40px;
   margin-left: 20px;
 }
@@ -292,11 +275,40 @@
 .linje {
   border: none;
   border-top: 2px solid #000;
-  width: 400px;
+  width: 230px;
   margin-left: 20px;
 }
 
-.mainHand {
-  padding-bottom: 150px;
-  margin-bottom: 150px;
+.tekst {
+  margin-top: 30px;
+  padding: 10px;
+}
+.hjerte {
+  width: 50px;
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: 1500px; /* Flytter billedet px op over containerens top */
+  left: 56%; /* Flytter billedet vandret */
+}
+
+.stjerne {
+  width: 100px;
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: 1390px; /* Flytter billedet px op over containerens top */
+  left: 61%; /* Flytter billedet vandret */
+}
+
+.menuItem {
+  color: var(--btn-dark-color);
+  background-color: var(--btn-dark-bg);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.h2card {
+  color: var(--color-text);
 }

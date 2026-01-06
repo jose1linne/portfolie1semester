@@ -2,14 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEMA3</title>
     <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,12 @@
 
 <body>
     <header>
-        <div class="logo_container">
-            <a class="logo" href="index.html">P</a>
+        <div>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
+            </div>
         </div>
-
 
         <div class="menu_container">
             <nav>
@@ -68,10 +71,12 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Formål</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+                <h2 class="h2card">Formål</h2>
+                <p>Temaet gav en grundlæggende forståelse af samspillet mellem brugere og brugergrænseflader samt de
+                    vigtigste teorier,
+                    værktøjer og metoder til research, design og test i digitale produkter. Fokus var på at basere
+                    design på indsigt i
+                    reelle brugere frem for antagelser.</p>
             </div>
 
             <div class="card2">
@@ -85,10 +90,10 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Proces</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+                <h2 class="h2card">Proces</h2>
+                <p>Under temaet var der meget fokus på ideudvikling. Derfor brugte vi det meste af temaet på, at
+                    lave research og mindre på kodning.
+                </p>
             </div>
 
             <div class="card3">
@@ -102,18 +107,16 @@
                 <div class="pin_container">
                     <img class="pin2" src="img/pin.png" alt="pin">
                 </div>
-                <h2>Læring</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
-                    repellat
-                    corporis ratione</p>
+                <h2 class="h2card">Læring</h2>
+                <p>Jeg lærte at skabe ideer, at bruge en masse metoder som moodboards, sketching, wireframing, styletile
+                    mm.
+
+                </p>
+
+                <div><a class="site" href="http://127.0.0.1:5501/Index.html">Tema3 site</a></div>
+
             </div>
         </section>
-
-        <div class="linkSite">
-
-            <a class="site" href="http://127.0.0.1:5501/Index.html">Tema3 site</a>
-        </div>
-
 
     </main>
 
@@ -121,7 +124,8 @@
         <h1>JOSEFINE</h1>
     </footer>
 
-    <script src="generel.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>

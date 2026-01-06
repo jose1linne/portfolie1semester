@@ -2,14 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUNDEPROFIL</title>
     <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,16 +25,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <div class="logo_container">
-            <a class="logo" href="index.html">P</a>
+        <div>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
+            </div>
         </div>
-
 
         <div class="menu_container">
             <nav>
@@ -70,10 +73,8 @@
                 <img class="pin" src="img/pin.png" alt="pin">
             </div>
 
-            <div class="overskriftKunde"">
-                <h1 class=" h1Kunde">KUNDEN AF
-                </h1>
-                <h1 class="h1semester">1. SEMESTER</h1>
+            <div class="overskriftKunde">
+                <p class="h1Kunde">KUNDE AF <br> 1. SEMESTER</p>
             </div>
             <hr>
 
@@ -95,23 +96,37 @@
 
 
             <hr>
-
             <div>
-                <ul class="mainHand">
-                    <li class="spg">Navn: <p class="hand">Josefine</p>
-                    </li>
-                    <hr class="linje">
-                    <li class="spg">Hjemby: <p class="hand">Randers</p>
-                    </li>
-                    <hr class="linje">
-                    <li class="spg">Stjernetegn: <p class="hand">Skytten</p>
-                    </li>
-                    <hr class="linje">
-                    <li class="spg">Musik: <p class="hand">Nordisk POP</p>
-                    </li>
-                    <hr class="linje">
+                <div class="grid_1_2">
+                    <ul class="mainHand">
+                        <li class="spg">Navn: <p class="hand">Josefine</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Hjemby: <p class="hand">Randers</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Stjernetegn: <p class="hand">Skytten</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Musik: <p class="hand">Nordisk POP</p>
+                        </li>
+                        <hr class="linje">
 
-                </ul>
+                    </ul>
+                </div>
+                <div><img class="hjerte" src="img/hjerte.png" alt="hjerte">
+                    <img class="stjerne" src="img/storStjerne.png" alt="stjerne">
+                </div>
+
+
+            </div>
+
+            <div class="tekst">
+                <p>Om 1. semester:</p>
+                <p class="hand">
+                    På 1. semester har jeg lært alt jeg ved nu om kodning. Inden ek anede jeg intet om kodning eller
+                    ideudvikling.
+                    Jeg synes også jeg har fået en langt bedre forståelse for farver og design principper.</p>
             </div>
         </section>
 
@@ -120,8 +135,8 @@
     <footer>
         <h1>JOSEFINE</h1>
     </footer>
-
-    <script src="generel.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>
