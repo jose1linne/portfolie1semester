@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEMA3</title>
+    <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
     <link rel="stylesheet" href="generel.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,59 +25,83 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">P</a>
+        <div class="logo_container">
+            <a class="logo" href="index.html">P</a>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="tema2.html">tema2</a></li>
-                <li><a href="tema3.html">tema3</a></li>
-                <li><a href="tema4.html">tema4</a></li>
-                <li><a href="tema5.html">tema5</a></li>
 
+
+        <div class="menu_container">
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="tema2.html">tema2</a></li>
+                    <li><a href="tema3.html">tema3</a></li>
+                    <li><a href="tema4.html">tema4</a></li>
+                    <li><a href="tema5.html">tema5</a></li>
+
+                </ul>
+        </div>
+
+        <div class="kunde_container">
+            <ul>
+                <li><a class="kundeprofil" id="kunde" href="kundeprofil.html">kundeprofil</a></li>
             </ul>
-            <div class="kundeprofil">
-                <a href="kundeprofil.html">kundeprofil</a>
-            </div>
+        </div>
+
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         </nav>
 
     </header>
 
     <main>
-        <section>
-            <div>
-                <h1>Tema 3</h1>
-                <h2>Noter af Tema 3</h2>
-            </div>
+        <div>
+            <h1 class="h1tema">Tema 3</h1>
+            <h2>Noter af Tema 3</h2>
+        </div>
+
+        <section class="grid_1">
 
             <div class="card">
-                <link rel="stylesheet" href="img/pin.png">
+                <div class="pin_container">
+                    <img class="pin2" src="img/pin.png" alt="pin">
+                </div>
                 <h2>Formål</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
                     repellat
                     corporis ratione</p>
             </div>
 
-            <div>
-                <link rel="stylesheet" href="img/pin.png">
-                //***IMG****//
+            <div class="card2">
+                <div class="pin_container">
+                    <img class="pin2" src="img/pin.png" alt="pin">
+                </div>
+                <div><img src="img/tema3.png" alt="img"></div>
             </div>
 
             <div class="card">
-                <link rel="stylesheet" href="img/pin.png">
+                <div class="pin_container">
+                    <img class="pin2" src="img/pin.png" alt="pin">
+                </div>
                 <h2>Proces</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
                     repellat
                     corporis ratione</p>
             </div>
 
-            <div>
-                <link rel="stylesheet" href="img/pin.png">
-                //***IMG****//
+            <div class="card3">
+                <div class="pin_container">
+                    <img class="pin2" src="img/pin.png" alt="pin">
+                </div>
+                <div><img src="img/tema3trin1.png" alt="trin"></div>
             </div>
 
             <div class="card">
-                <link rel="stylesheet" href="img/pin.png">
+                <div class="pin_container">
+                    <img class="pin2" src="img/pin.png" alt="pin">
+                </div>
                 <h2>Læring</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veritatis dolore harum est ut ipsa,
                     repellat
@@ -83,7 +109,10 @@
             </div>
         </section>
 
-        <div>link til site</div>
+        <div class="linkSite">
+
+            <a class="site" href="http://127.0.0.1:5501/Index.html">Tema3 site</a>
+        </div>
 
 
     </main>
@@ -91,6 +120,8 @@
     <footer>
         <h1>JOSEFINE</h1>
     </footer>
+
+    <script src="generel.js"></script>
 </body>
 
 </html>

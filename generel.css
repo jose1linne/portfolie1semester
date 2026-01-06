@@ -16,6 +16,7 @@ img {
   --primary-color: #000000;
   --pimary-nav-h1-color: #9b0505;
   --card-bg-color: white;
+  --alm-font: "Roboto Mono", monospace;
 }
 
 body {
@@ -49,6 +50,11 @@ p {
   font-family: "Roboto Mono", monospace;
   text-decoration: none;
 }
+
+hr {
+  width: 100%; /**når hr er et grid bliver den usynlig, så det fikser den**/
+  border: 1px dashed black; /*for at gøre dem stiplet*/
+}
 /* 
 a {
   font-weight: 300;
@@ -57,3 +63,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
 } */
+
+li {
+  list-style: none;
+}

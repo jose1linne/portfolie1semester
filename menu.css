@@ -6,6 +6,7 @@
   color: var(--pimary-nav-h1-color);
   text-transform: uppercase;
   text-decoration: none;
+  padding-right: 90px;
 }
 
 header {
@@ -14,6 +15,14 @@ header {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.kundeprofil {
+  font-family: "Montserrat", sans-serif;
+  color: var(--pimary-nav-h1-color);
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .menu {
@@ -21,6 +30,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .menu li {
@@ -60,19 +70,6 @@ header {
   transition: 0.2s linear;
 }
 
-/* .knapheader a {
-  text-decoration: none;
-  background-color: #3a3a3a;
-  color: #ffffff;
-  border: 1px solid white;
-  padding: 10px 15px;
-  font-size: 1.5rem;
-}
-
-.knapheader a:hover {
-  color: #ba6028;
-} */
-
 /********** Mobilfirst **************/
 @media screen and (max-width: 800px) {
   .menu {
@@ -80,6 +77,7 @@ header {
   }
   .burger {
     display: block;
+    justify-content: end;
     background-color: transparent;
     border: 0;
   }

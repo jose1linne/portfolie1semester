@@ -1,0 +1,29 @@
+.btn_kvit {
+  display: inline-flex; /* gør pil + tekst til en linje */
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden; /* så pilen kan glide ind */
+  position: relative;
+}
+
+.btn_kvit .arrow {
+  margin-right: 10px;
+  transform: translateX(-100%); /* starter uden for venstre side */
+  transition: transform 0.3s ease;
+  opacity: 0; /* skjult fra start */
+}
+
+.btn_kvit .titel {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover-effekt */
+.btn_kvit:hover .titel {
+  transform: translateX(10px); /* flytter teksten til højre */
+}
+
+.btn_kvit:hover .arrow {
+  transform: translateX(0); /* pilen glider ind */
+  opacity: 1; /* gør pilen synlig */
+}
