@@ -2,12 +2,16 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolie Josefine</title>
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/x-icon" href="img/favIkon.png">
+
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="hover.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,26 +29,36 @@
 <body>
     <header>
         <div>
-            <a class="logo" href="index.html">P</a>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
+            </div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="tema2.html">tema2</a></li>
-                <li><a href="tema3.html">tema3</a></li>
-                <li><a href="tema4.html">tema4</a></li>
-                <li><a href="tema5.html">tema5</a></li>
-                <li><a href="kundeprofil.html">kundeprofil</a></li>
 
+        <div class="menu_container">
+            <nav>
+                <ul class="menu" id="menu">
+
+                    <li><a href="tema2.html">tema2</a></li>
+                    <li><a href="tema3.html">tema3</a></li>
+                    <li><a href="tema4.html">tema4</a></li>
+                    <li><a href="tema5.html">tema5</a></li>
+
+                </ul>
+        </div>
+
+        <div class="kunde_container">
+            <ul>
+                <li><a class="kundeprofil" id="kunde" href="kundeprofil.html">kundeprofil</a></li>
             </ul>
+        </div>
 
-
-            <button class="burger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         </nav>
-
 
     </header>
 
@@ -72,9 +86,11 @@
             <div>
 
                 <div class="tema_kvit">
-                    <p>TEMA2</p>
-                    <div class="btn_kvit">
 
+                    <p>TEMA2</p>
+
+                    <div class="btn_kvit">
+                        <span class="arrow">➔</span>
                         <a class="titel" href="tema2.html">GRUNDLÆGGENDE WEB</a>
                         <p class="pris">$20.00</p>
                     </div>
@@ -83,6 +99,10 @@
                         <p class="pris">$5.00</p>
                     </div>
                 </div>
+
+
+
+
 
                 <div class="tema_kvit">
                     <p>TEMA3</p>
@@ -158,11 +178,12 @@
 
     <footer>
         <div>
-            <h1 class="josefine">JOSEFINE</h1>
+            <h1>JOSEFINE</h1>
         </div>
     </footer>
 
-    <script src="generel.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>

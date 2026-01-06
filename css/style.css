@@ -1,0 +1,314 @@
+.overskrift {
+  padding-top: 170px;
+  padding-bottom: 300px;
+}
+
+/**********kvittering*********/
+
+.kvittering {
+  display: flex;
+  align-items: stretch; /**gør at børnene fylder hele bredden**/
+
+  background-color: var(--card-bg-color);
+  max-width: 400px;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 200px;
+  flex-direction: column; /*gør elemterne i boksen lodrette og ikke vandrette*/
+}
+
+.p_kvit {
+  font-size: 30px;
+}
+
+.adresse {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 40px;
+  text-align: center; /**får teksten i midten**/
+}
+
+.tema_kvit {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.btn_kvit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.procent {
+  font-size: 12px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.pris {
+  margin-left: auto;
+}
+
+.gebyr {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.betjent {
+  padding-top: 65px;
+  padding-bottom: 25px;
+  line-height: 40px;
+  text-align: center; /**får teksten i midten**/
+}
+
+/*****img*****/
+
+.pin_container {
+  justify-items: center; /*gør pinen ligger i midten*/
+  position: relative; /*gør det muligt at min pin kan ligges relativt*/
+  overflow: visible; /*gør at når min pin stikker ud, så den ikke klippet af*/
+}
+
+.pin {
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: -32px; /* Flytter billedet 50px op over containerens top */
+  left: 46%; /* Centrerer vandret */
+
+  width: 50px;
+}
+
+.stregkode {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.pc_container {
+  justify-items: center; /*gør pinen ligger i midten*/
+  position: relative; /*gør det muligt at min pin kan ligges relativt*/
+}
+
+.computer {
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: 33px; /* Flytter billedet 50px op over containerens top */
+  left: -4%; /* Centrerer vandret */
+}
+
+.tema2forside {
+  width: 350px;
+}
+
+/*********tema*******/
+
+.grid_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin-bottom: 100px;
+  margin: 100px auto;
+}
+
+.pin2 {
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: -50px; /* Flytter billedet 50px op over containerens top */
+  left: 46%; /* Centrerer vandret */
+
+  width: 50px;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  padding: 23px;
+  margin-top: 150px;
+}
+
+.card2 {
+  background-color: white;
+  background-position: 20% center;
+  width: 350px;
+  height: 350px;
+  padding: 23px;
+  margin-top: 150px;
+}
+
+.card3 {
+  background-color: white;
+  padding-top: 25px;
+  width: 350px;
+  height: 350px;
+  margin-top: 150px;
+}
+
+.h1tema {
+  margin-top: 190px;
+}
+
+.overskriftTema {
+  margin-bottom: 200px;
+}
+
+.linkSite {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.site {
+  color: #9b0505;
+  /* padding: 10px; */
+
+  /* background-color: white; */
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 30px; */
+}
+
+@media screen and (min-width: 800px) {
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    overflow: visible;
+    margin-top: 150px;
+    /* grid-template-rows: auto auto; */
+  }
+
+  .card2 {
+    position: relative;
+    transform: translateY(240px);
+    z-index: 2;
+  }
+
+  .card3 {
+    position: relative;
+    transform: translateY(240px);
+    z-index: 2;
+  }
+}
+
+/*****************kundeprofil******************/
+
+.mainCard {
+  background-color: white;
+  max-width: 500px;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.h1Kunde {
+  /* font-size: 100px;
+  text-align: start; */
+
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 56px;
+  text-align: center; /**får teksten i midten**/
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end; /* venstre kolonne skubbes mod midten */
+  align-items: center;
+  gap: 0; /* ingen afstand */
+  margin: auto;
+}
+
+.grid_1_1 > :nth-child(2) {
+  justify-self: start; /* højre kolonne skubbes mod midten */
+}
+
+.imgMig {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* tilpasser billedet til kolonnen */
+  height: auto;
+}
+
+.KundeOverskrift {
+  margin-top: 190px;
+  margin-bottom: 350px;
+}
+
+.liste {
+  font-family: "Roboto Mono", monospace;
+  line-height: 70px;
+  font-size: 25px;
+
+  padding-left: 40px;
+}
+
+.cirkel {
+  position: relative;
+  transform: translateY(-133px);
+  width: 200px;
+}
+
+.hand {
+  display: inline;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spg {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.linje {
+  border: none;
+  border-top: 2px solid #000;
+  width: 230px;
+  margin-left: 20px;
+}
+
+.tekst {
+  margin-top: 30px;
+  padding: 10px;
+}
+.hjerte {
+  width: 50px;
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: 1500px; /* Flytter billedet px op over containerens top */
+  left: 56%; /* Flytter billedet vandret */
+}
+
+.stjerne {
+  width: 100px;
+  position: absolute; /*så man kan rykke billedet hen hvor man vil uden det påvirker forældre boksen*/
+  top: 1390px; /* Flytter billedet px op over containerens top */
+  left: 61%; /* Flytter billedet vandret */
+}
+
+.menuItem {
+  color: var(--btn-dark-color);
+  background-color: var(--btn-dark-bg);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.h2card {
+  color: var(--color-text);
+}

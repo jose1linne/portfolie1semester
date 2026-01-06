@@ -2,12 +2,15 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUNDEPROFIL</title>
+    <link rel="icon" type="image/x-icon" href="img/favIkon.png">
 
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/generel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,60 +23,110 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">P</a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="tema2.html">tema2</a></li>
-                <li><a href="tema3.html">tema3</a></li>
-                <li><a href="tema4.html">tema4</a></li>
-                <li><a href="tema5.html">tema5</a></li>
-
-            </ul>
-            <div class="kundeprofil">
-                <a href="kundeprofil.html">kundeprofil</a>
+        <div>
+            <div class="logo_container">
+                <a class="logo" href="index.html">P</a>
+                <button id="dark_btn" class="menuItem">Dark</button>
             </div>
+        </div>
+
+        <div class="menu_container">
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="tema2.html">tema2</a></li>
+                    <li><a href="tema3.html">tema3</a></li>
+                    <li><a href="tema4.html">tema4</a></li>
+                    <li><a href="tema5.html">tema5</a></li>
+
+                </ul>
+        </div>
+
+        <div class="kunde_container">
+            <ul>
+                <li><a class="kundeprofil" id="kunde" href="kundeprofil.html">kundeprofil</a></li>
+            </ul>
+        </div>
+
+        <button class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         </nav>
 
     </header>
 
     <main>
-        <h1>Kundeprofil</h1>
+        <h1 class="KundeOverskrift">Kundeprofil</h1>
 
-        <section>
-            <div>
-                <h1>KUNDEN AF
-                    1.SEMESTER</h1>
+        <section class="mainCard">
+
+            <div class="pin_container">
+                <img class="pin" src="img/pin.png" alt="pin">
+            </div>
+
+            <div class="overskriftKunde">
+                <p class="h1Kunde">KUNDE AF <br> 1. SEMESTER</p>
             </div>
             <hr>
 
-            <div>
-                <div>
-                    //****IMG****//
+            <div class="grid_1_1">
+                <div class="imgMig">
+                    <img src="img/mig.png" alt="mig">
                 </div>
-                <div>
+
+                <div class="liste">
                     <ul>
-                        <li>uddannet</li>
-                        <li>lærling</li>
-                        <li>studerende</li>
-                        <li>praktikant</li>
+                        <li>Uddannet</li>
+                        <li>Lærling</li>
+                        <li>Studerende</li>
+                        <li>Praktikant</li>
+                    </ul>
+                    <img class="cirkel" src="img/cirkel.png" alt="cirkel">
+                </div>
+            </div>
+
+
+            <hr>
+            <div>
+                <div class="grid_1_2">
+                    <ul class="mainHand">
+                        <li class="spg">Navn: <p class="hand">Josefine</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Hjemby: <p class="hand">Randers</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Stjernetegn: <p class="hand">Skytten</p>
+                        </li>
+                        <hr class="linje">
+                        <li class="spg">Musik: <p class="hand">Nordisk POP</p>
+                        </li>
+                        <hr class="linje">
+
                     </ul>
                 </div>
+                <div><img class="hjerte" src="img/hjerte.png" alt="hjerte">
+                    <img class="stjerne" src="img/storStjerne.png" alt="stjerne">
+                </div>
+
 
             </div>
-            <hr>
-            <div>
-                <ul>
-                    <li>Navn: Josefine</li>
-                    <li>Hjemby: Randers</li>
-                    <li>Stjernetegn: Skytten</li>
-                    <li>Musik: Nordisk POP</li>
-                </ul>
+
+            <div class="tekst">
+                <p>Om 1. semester:</p>
+                <p class="hand">
+                    På 1. semester har jeg lært alt jeg ved nu om kodning. Inden ek anede jeg intet om kodning eller
+                    ideudvikling.
+                    Jeg synes også jeg har fået en langt bedre forståelse for farver og design principper.</p>
             </div>
         </section>
 
@@ -82,8 +135,8 @@
     <footer>
         <h1>JOSEFINE</h1>
     </footer>
-
-
+    <script src="js/dark.js"></script>
+    <script src="js/generel.js"></script>
 </body>
 
 </html>
